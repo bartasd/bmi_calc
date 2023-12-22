@@ -8,7 +8,7 @@ let m = false;
 let m_type = "";
 let h = false;
 mass.addEventListener("input", function () {
-  if (!isNaN(mass.value)) {
+  if (!isNaN(mass.value) && mass.value !== "") {
     m = +mass.value;
   } else {
     m = false;
@@ -16,7 +16,7 @@ mass.addEventListener("input", function () {
   console.log();
 });
 height.addEventListener("input", function () {
-  if (!isNaN(height.value)) {
+  if (!isNaN(height.value) && height.value !== "") {
     h = +height.value;
   } else {
     h = false;
@@ -24,6 +24,11 @@ height.addEventListener("input", function () {
 });
 
 calc.addEventListener("click", function onClick() {
+  console.log(m);
+  console.log(h);
+  res.classList.remove("normal");
+  res.classList.remove("tooHigh");
+  res.classList.remove("tooLow");
   let kmi = null;
   if (m !== false && h !== false) {
     if (h == 0 || h > 300)
