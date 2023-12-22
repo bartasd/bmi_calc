@@ -48,6 +48,7 @@ body * {
 .i > .label {
   margin-bottom: 5px;
   text-align: center;
+  color: rgb(163, 171, 175);
 }
 
 .mass .height {
