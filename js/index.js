@@ -28,7 +28,7 @@ calc.addEventListener("click", function onClick() {
   res.classList.remove("tooLow");
   let kmi = null;
   if (m !== false && h !== false) {
-    if (h == 0 || h > 300)
+    if (h == 0 || h >= 300)
       res.innerText =
         "YOUR HEIGHT CAN'T BE ZERO OR IS TOO HIGH (height > 3). \n PLEASE TRY AGAIN";
     else if (m == 0)
