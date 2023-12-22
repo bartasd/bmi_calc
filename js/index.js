@@ -13,7 +13,6 @@ mass.addEventListener("input", function () {
   } else {
     m = false;
   }
-  console.log();
 });
 height.addEventListener("input", function () {
   if (!isNaN(height.value) && height.value !== "") {
@@ -24,8 +23,6 @@ height.addEventListener("input", function () {
 });
 
 calc.addEventListener("click", function onClick() {
-  console.log(m);
-  console.log(h);
   res.classList.remove("normal");
   res.classList.remove("tooHigh");
   res.classList.remove("tooLow");
